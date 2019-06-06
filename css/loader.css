@@ -1,0 +1,295 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  width: auto;
+  height: 95vh;
+  background-image: url("../media/ruins.png");
+  animation: flicker 13s infinite ease-in-out, slide 4s infinite linear;
+  color: white;
+  /*overflow-y: hidden;*/
+}
+
+@keyframes flicker {
+  55% {
+    background-image: url("../media/ruins.png");
+  }
+
+  75% {
+    background-image: url("../media/ruins-2.png");
+  }
+
+  95% {
+    background-image: url("../media/ruins.png");
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 0% -99.99999%;
+  }
+}
+
+.loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-top: 10px solid lightgreen;
+  border-bottom: 10px solid lightgreen;
+  border-left: 10px solid rgb(51, 130, 106);
+  border-right: 10px solid rgb(51, 130, 106);
+  animation: rotate-minus 6s infinite ease-in-out;
+}
+
+.ct-loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(184, 230, 186);
+  border-top: 10px solid rgb(51, 130, 106);
+  border-bottom: 10px solid rgb(51, 130, 106);
+  border-left: 10px solid lightgreen;
+  border-right: 10px solid lightgreen;
+  animation: rotate 6s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  18% {
+    transform: rotateZ(93deg);
+    background-color: transparent;
+  }
+
+  22% {
+    transform: rotateZ(90deg);
+  }
+
+  25% {
+    transform: rotateZ(90deg);
+    background-color: transparent;
+  }
+
+  43% {
+    transform: rotateZ(183deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  47% {
+    transform: rotateZ(180deg);
+  }
+
+  50% {
+    transform: rotateZ(180deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  68% {
+    transform: rotateZ(273deg);
+    background-color: transparent;
+  }
+
+  72% {
+    transform: rotateZ(270deg);
+  }
+
+  75% {
+    transform: rotateZ(270deg);
+    background-color: transparent;
+  }
+
+  93% {
+    transform: rotateZ(363deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  97% {
+    transform: rotateZ(360deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-minus {
+  0% {
+    transform: rotateZ(-0deg);
+    background-color: transparent;
+  }
+
+  18% {
+    transform: rotateZ(-93deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  22% {
+    transform: rotateZ(-90deg);
+  }
+
+  25% {
+    transform: rotateZ(-90deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  43% {
+    transform: rotateZ(-183deg);
+    background-color: transparent;
+  }
+
+  47% {
+    transform: rotateZ(-180deg);
+  }
+
+  50% {
+    transform: rotateZ(-180deg);
+    background-color: transparent;
+  }
+
+  68% {
+    transform: rotateZ(-273deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  72% {
+    transform: rotateZ(-270deg);
+  }
+
+  75% {
+    transform: rotateZ(-270deg);
+    background-color: rgb(184, 230, 186);
+  }
+
+  93% {
+    transform: rotateZ(-363deg);
+    background-color: transparent;
+  }
+
+  97% {
+    transform: rotateZ(-360deg);
+  }
+
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.grid-container {
+  display: grid;
+  width: 150px;
+  grid-gap: 0px 0px;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #131313;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#footer {
+  background: #131313 !important;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 1) inset;
+}
+
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #5f83a3;
+}
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+  padding: 3px 0;
+}
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li {
+  color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+  color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width:767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+hr {
+  border-top: 1px solid white;
+}
+
+.pitch {
+  color: darkgrey;
+}

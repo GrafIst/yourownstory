@@ -1,0 +1,451 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+:root {
+  --main-duration: 13s;
+}
+
+body {
+  padding-top: 56px;
+  background-color: black;
+  font-family: Georgia, serif;
+}
+
+.dropdown-menu {
+  background-color: #131313;
+  color: white;
+}
+
+.dropdown-menu-right {
+  padding: 10%;
+}
+
+.background-ruin {
+  z-index: -10;
+  color: white;
+  width: auto;
+  height: 100%;
+  background-image: url("../media/ruins.png");
+  animation: flicker var(--main-duration) infinite ease-in-out, slide 17s infinite linear;
+}
+
+.card {
+  width: 22rem;
+  height: 475px;
+  color: white;
+  background-color: #131313;
+  margin: 5% auto;
+  box-shadow: 0 0 27px 14px rgba(0, 0, 0, 0.9);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.card-body {
+  padding: 0.8rem;
+}
+
+.writer-img {
+  width: 100%;
+  height: auto;
+}
+
+.scrollarticle {
+  overflow-y: none;
+}
+
+@media only screen and (max-width: 1500px) {
+  .scrollarticle {
+    overflow-y: scroll;
+  }
+}
+
+.article-text {
+  height: 750px;
+}
+
+@keyframes flicker {
+  55% {
+    background-image: url("../media/ruins.png");
+  }
+
+  75% {
+    background-image: url("../media/ruins-2.png");
+  }
+
+  95% {
+    background-image: url("../media/ruins.png");
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 0% -99.8%;
+  }
+}
+
+.hf-black {
+  /*  width: 50%; */
+  z-index: 0;
+  position: relative;
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.article-fixsize {
+  height: 2150px;
+}
+
+.animation-article {
+  animation: slide 55s infinite linear;
+}
+
+.hp {
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hp img {
+  position: relative;
+  left: 500%;
+  margin-left: -1000%;
+}
+
+.eyes {
+  z-index: 2;
+  opacity: 0;
+  position: absolute;
+  animation: eyes var(--main-duration) infinite ease-in-out;
+}
+
+.fix-text-index {
+  z-index: 3;
+  position: absolute;
+  color: white;
+}
+
+.fix-text-index h1 {
+  font-size: 4vh
+}
+
+@keyframes eyes {
+  55% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0.9;
+  }
+
+  95% {
+    opacity: 0;
+  }
+}
+
+.grey-rect {
+  position: absolute;
+  z-index: 15;
+  /*margin: auto auto;*/
+  height: 100%;
+  background-color: rgba(210, 210, 210, 0.2);
+  box-shadow: 0px 22px 35px 0px rgba(0, 0, 0, 0.9);
+}
+
+.fixform {
+  color: white;
+  z-index: 16;
+}
+
+.error404 {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 710px;
+}
+
+.black-rect {
+  width: 100%;
+  height: 20px;
+  background-color: 131313;
+}
+
+.dble_menu {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.dble_menu h3 {
+  color: white;
+  font-size: 4vh;
+  text-align: center;
+}
+
+.one-write {
+  width: 50%;
+  height: 750px;
+  background-image: url("../media/ink01.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 850px;
+  background-attachment: fixed;
+  box-shadow: 0px 0px 70px 15px rgba(0, 0, 0, 1) inset;
+  float: left;
+}
+
+.one-write:hover {
+  opacity: 0.90;
+  background-image: url("../media/ink02.jpg");
+  transition-duration: 2s;
+}
+
+.two-read {
+  width: 50%;
+  height: 750px;
+  background-image: url("../media/write01.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 850px;
+  background-position-x: right;
+  background-attachment: fixed;
+  box-shadow: 0px 0px 70px 15px rgba(0, 0, 0, 1) inset;
+  float: left;
+}
+
+.two-read:hover {
+  opacity: 0.80;
+  background-image: url("../media/write02.jpg");
+  transition-duration: 2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .one-write {
+    float: none;
+    height: 325px;
+    width: 100%;
+  }
+
+  .two-read {
+    float: none;
+    height: 325px;
+    width: 100%;
+    background-position-x: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .one-write {
+    float: none;
+    height: 325px;
+    width: 100%;
+  }
+
+  .two-read {
+    float: none;
+    height: 325px;
+    width: 100%;
+    background-position-x: center;
+  }
+}
+
+.carousel {
+  height: 165px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  height: 165px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .carousel {
+    height: 245px;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    height: 245px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel {
+    height: 245px;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    height: 245px;
+  }
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-indicators {
+  text-align: right;
+  float: right;
+  right: 1% !important;
+  left: inherit;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  background-image: url("../media/avater01.png");
+  background-size: 100px;
+  border-radius: 100%;
+  border: solid 1px;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.fixsentence {
+  color: white;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+
+.darkgrey-color {
+  background-color: #131313;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 1) inset;
+}
+
+.top {
+  width: auto;
+  height: 530px;
+  background-color: grey;
+  opacity: 1;
+  z-index: -8;
+  font-size: 2vh
+}
+
+.footer {
+  width: auto;
+  height: 370px;
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #131313;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#footer {
+  background: #131313 !important;
+  box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 1) inset;
+}
+
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #5f83a3;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: rgb(41, 162, 137);
+}
+
+#footer ul.social li {
+  padding: 3px 0;
+}
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li {
+  color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+  color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width:767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+/*Changer la couleur des lignes hr*/
+hr {
+  border-top: 1px solid white;
+}
+
+.pitch {
+  color: darkgrey;
+}
